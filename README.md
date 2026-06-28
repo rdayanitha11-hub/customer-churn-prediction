@@ -1,6 +1,6 @@
 # Customer Churn Prediction
 
-Link : https://customer-churn-prediction-t1mk.onrender.com
+Live Link : https://customer-churn-prediction-t1mk.onrender.com
 
 A Machine Learning web application built with Streamlit to predict customer churn for a telecommunications company. The app allows users to input customer details and receive real-time predictions on whether a customer is likely to leave.
 
