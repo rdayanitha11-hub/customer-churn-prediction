@@ -1,7 +1,5 @@
 # Customer Churn Prediction
 
-**Live Demo:** https://customer-churn-prediction-wbnvevdbfxkkgxyvqs4fnu.streamlit.app/
-
 A Machine Learning web application built with Streamlit to predict customer churn for a telecommunications company. The app allows users to input customer details and receive real-time predictions on whether a customer is likely to leave.
 
 ### 📌 Project Overview
