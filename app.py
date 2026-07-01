@@ -48,9 +48,9 @@ st.markdown("""
 
     /* Floating Bubbles Animation */
     @keyframes float {
-        0% { transform: translateY(100vh) scale(0); opacity: 0; }
-        50% { opacity: 0.3; }
-        100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+        0% { transform: translateY(100vh) scale(0); opacity: 1; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(-10vh) scale(1); opacity: 1; }
     }
 
   .bubble {
