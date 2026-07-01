@@ -50,30 +50,28 @@ st.markdown("""
     @keyframes float {
         0% { transform: translateY(100vh) scale(0); opacity: 0; }
         50% { opacity: 0.3; }
-        100% { transform: translateY(-10vh) scale(0); opacity: 0; }
+        100% { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
 
     .bubble {
-    position: absolute;
-    bottom: -150px;
-    border-radius: 50%;
-    animation: float-up 15s infinite;
-    
-    background: #FF6B6B;  /* ← Solid red */
-    opacity: 0.7;         /* ← 70%  */
-    border: 2px solid #fff; 
-}
+        position: fixed;
+        bottom: -100px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        animation: float 10s infinite;
+        z-index: 1;
+        pointer-events: none;
+    }
 
-.bubble:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-delay: 0s; }
-.bubble:nth-child(2) { left: 20%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
-.bubble:nth-child(3) { left: 35%; width: 50px; height: 50px; animation-delay: 4s; }
-.bubble:nth-child(4) { left: 50%; width: 80px; height: 80px; animation-delay: 0s; animation-duration: 18s; }
-.bubble:nth-child(5) { left: 70%; width: 60px; height: 60px; animation-delay: 3s; }
-.bubble:nth-child(6) { left: 85%; width: 30px; height: 30px; animation-delay: 6s; animation-duration: 14s; }
+    .bubble:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-delay: 0s; }
+    .bubble:nth-child(2) { left: 20%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+    .bubble:nth-child(3) { left: 35%; width: 50px; height: 50px; animation-delay: 4s; }
+    .bubble:nth-child(4) { left: 50%; width: 80px; height: 80px; animation-delay: 0s; animation-duration: 18s; }
+    .bubble:nth-child(5) { left: 70%; width: 60px; height: 60px; animation-delay: 3s; }
+    .bubble:nth-child(6) { left: 85%; width: 30px; height: 30px; animation-delay: 6s; animation-duration: 14s; }
 
-
-    /* Solid white content box */
-  .main.block-container {
+    /* Solid white content box - text clear ah theriyum */
+    .main.block-container {
         background: #ffffff;
         border-radius: 20px;
         padding: 2rem 2rem 4rem 2rem;
@@ -92,7 +90,7 @@ st.markdown("""
     }
 
     /* Header styling */
-  .main-header {
+    .main-header {
         font-size: 3rem;
         font-weight: 700;
         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
@@ -102,14 +100,14 @@ st.markdown("""
         margin-bottom: 0.5rem;
     }
 
-  .sub-header {
+    .sub-header {
         text-align: center;
         color: #333;
         font-size: 1.1rem;
         margin-bottom: 2rem;
     }
 
-  .result-card {
+    .result-card {
         padding: 25px;
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -131,20 +129,20 @@ st.markdown("""
     }
 
     /* Fix plotly chart visibility */
-  .js-plotly-plot,.plotly {
+    .js-plotly-plot, .plotly {
         z-index: 10;
         position: relative;
     }
 
     /* Tab styling */
-  .stTabs [data-baseweb="tab-list"] {
+    .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
         background: #f0f2f6;
         border-radius: 10px;
         padding: 5px;
     }
 
-  .stTabs [data-baseweb="tab"] {
+    .stTabs [data-baseweb="tab"] {
         border-radius: 8px;
         background: transparent;
     }
@@ -156,9 +154,8 @@ st.markdown("""
 <div class="bubble"></div>
 <div class="bubble"></div>
 <div class="bubble"></div>
-<div class="bubble"></div>
+<div class="bubble"></div> 
 """, unsafe_allow_html=True)
-
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
