@@ -59,48 +59,17 @@ st.markdown("""
     border-radius: 50%;
     animation: float-up 15s infinite;
     
-    /* INGA PAARU - VELICHAMA VENDAM */
-    background: #FF6B6B;  /* ← Solid red. Nalla theriyum */
-    opacity: 0.7;         /* ← 70% theriyum. 0.1 illa */
-    border: 2px solid #fff; /* ← Vellai border. Nalla outline varum */
+    background: #FF6B6B;  /* ← Solid red */
+    opacity: 0.7;         /* ← 70%  */
+    border: 2px solid #fff; 
 }
 
-.bubble:nth-child(1) { 
-    left: 10%; 
-    width: 60px; height: 60px; 
-    background: #FF6B6B; /* Red */
-    animation-delay: 0s; 
-}
-.bubble:nth-child(2) { 
-    left: 20%; 
-    width: 40px; height: 40px; 
-    background: #4ECDC4; /* Cyan */
-    animation-delay: 2s; 
-}
-.bubble:nth-child(3) { 
-    left: 35%; 
-    width: 70px; height: 70px; 
-    background: #45B7D1; /* Blue */
-    animation-delay: 4s; 
-}
-.bubble:nth-child(4) { 
-    left: 50%; 
-    width: 50px; height: 50px; 
-    background: #FFA07A; /* Orange */
-    animation-delay: 6s; 
-}
-.bubble:nth-child(5) { 
-    left: 70%; 
-    width: 45px; height: 45px; 
-    background: #98D8C8; /* Green */
-    animation-delay: 1s; 
-}
-.bubble:nth-child(6) { 
-    left: 85%; 
-    width: 65px; height: 65px; 
-    background: #F7DC6F; /* Yellow */
-    animation-delay: 3s; 
-}
+.bubble:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-delay: 0s; }
+.bubble:nth-child(2) { left: 20%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+.bubble:nth-child(3) { left: 35%; width: 50px; height: 50px; animation-delay: 4s; }
+.bubble:nth-child(4) { left: 50%; width: 80px; height: 80px; animation-delay: 0s; animation-duration: 18s; }
+.bubble:nth-child(5) { left: 70%; width: 60px; height: 60px; animation-delay: 3s; }
+.bubble:nth-child(6) { left: 85%; width: 30px; height: 30px; animation-delay: 6s; animation-duration: 14s; }
 
 
     /* Solid white content box */
