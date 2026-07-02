@@ -70,7 +70,7 @@ st.markdown("""
     .bubble:nth-child(5) { left: 70%; width: 60px; height: 60px; animation-delay: 3s; }
     .bubble:nth-child(6) { left: 85%; width: 30px; height: 30px; animation-delay: 6s; animation-duration: 14s; }
 
-    /* Solid white content box - text clear ah theriyum */
+    /* Solid white content box */
     .main.block-container {
         background: #ffffff;
         border-radius: 20px;
@@ -185,8 +185,8 @@ with st.sidebar:
     st.caption("© 2026 All Rights Reserved")
 
 # ---------------- MAIN HEADER ----------------
-st.markdown('<h1 class="main-header">📊 Customer Churn Prediction</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Predict if a customer will churn using AI & Machine Learning</p>', unsafe_allow_html=True)
+st.title("📊 Customer Churn Prediction")
+st.write("Predict if a customer will churn using AI & Machine Learning")
 st.markdown("---")
 
 # ---------------- TABS ----------------
